@@ -5,17 +5,26 @@
     z-index: 2;
     position: relative;
     margin: 0 40px;
-    color: antiquewhite;
+    color: white;
     height: 100vh;
     font-family: Roboto;
 }
 
 h2 {
-    color: antiquewhite;
+    color: white;
     font-size: 3.3rem;
 }
  p {
     font-size: 1rem;
     color: #8a94a7c0;
+    width: 70vw;
+    height: auto;
  }
 
+
+ @media screen and (max-width:880px){
+    #about {
+        height: auto;
+    }
+
+ }

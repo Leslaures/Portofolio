@@ -7,7 +7,7 @@ header {
     height: 100vh;
     overflow: hidden;
     font-family: Roboto;
-    color: antiquewhite;
+    color: white;
     position: relative;
   }
   
@@ -26,9 +26,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     z-index: 1;
     position: relative;
+    justify-content: space-between;
   }
 
 
@@ -38,13 +38,16 @@ header {
     flex-direction: row;
     justify-content: space-between;
     font-family: Roboto;
-    width: 80vw;
+    width: 90vw;
+    align-items: flex-start;
+    text-align: center;
     
 
     nav {
         display: flex;
         align-items: center;
         text-align: center;
+        padding-top: 5vh;
 
         ul {
             display: flex;
@@ -64,7 +67,7 @@ header {
 
 a {
     text-decoration: none;
-    color: antiquewhite;
+    color: white;
 }
 
 a:hover {
@@ -77,19 +80,24 @@ a:hover {
     z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     width: 80vw;
+    height: 40vh;
 }
 
 .typewriter-text {
     font-family: Roboto;
     font-size: 3rem; 
-    color: antiquewhite; 
+    color: white; 
     width: 70vw;
 }
 
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
 
 figure {
     margin: 0;

@@ -5,13 +5,13 @@
     z-index: 2;
     position: relative;
     margin: 0 40px;
-    color: antiquewhite;
-    height: 100vh;
+    color: white;
     font-family: Roboto;
+    height: 100vh;
 }
 
 h2 {
-    color: antiquewhite;
+    color: white;
     font-size: 3.3rem;
 }
  p {
@@ -19,3 +19,44 @@ h2 {
     color: #8a94a7c0;
  }
 
+h3 {
+    font-size: 2rem;
+}
+
+.cartecompétence {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    height: 70vh;
+    text-align: center;
+    gap: 20px;
+}
+
+.frontbackend {
+    border: red solid 1px;
+    border-radius: 5%;
+    background-color: black;
+    width: 40vw;
+}
+
+@media screen and (max-width:880px){
+    #competences {
+        height: auto;
+    }
+    .cartecompétence {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        gap: 20px;
+    }
+    .frontbackend {
+        border: red solid 1px;
+        border-radius: 5%;
+        background-color: black;
+        width: 80vw;
+    }
+}

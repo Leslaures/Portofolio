@@ -1,3 +1,4 @@
+import NavBar from "../Nav/NavBar"
 import "./Header.css"
 import ParticlesBackground from "./ParticlesBackground"
 import Typewriter from "./Typewriter"
@@ -17,15 +18,7 @@ function Header () {
                     <img src="src\assets\photo_de_profil.jpg" alt="photo de profil" />
                     <h1>Laure MAFFINI, <br/> développeuse Web</h1>
                 </figure>
-                <nav id="menuPpal">
-                    <ul>
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#about">A propos</a></li>
-                        <li><a href="#competences">Compétences</a></li>
-                        <li><a href="#portofolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <NavBar />
             </section>
 
             <div className="typewriter-text">

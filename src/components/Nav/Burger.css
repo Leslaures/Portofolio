@@ -1,0 +1,15 @@
+
+#burger {
+   display: none;
+}
+
+@media screen and (max-width: 880px) {
+    #burger {
+        display: block;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    color: white;
+    font-size: 2.5rem;
+}
+}

@@ -8,6 +8,7 @@
     color: white;
     height: 100vh;
     font-family: Roboto;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
 h2 {
@@ -19,3 +20,8 @@ h2 {
     color: #8a94a7c0;
  }
 
+ @media screen and (max-width:880px){
+    #portofolio {
+        min-height: 100vh;
+    }
+ }

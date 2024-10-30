@@ -8,6 +8,7 @@
     color: white;
     font-family: Roboto;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
 h2 {
@@ -42,7 +43,7 @@ h3 {
 
 @media screen and (max-width:880px){
     #competences {
-        height: auto;
+        min-height: 100vh;
     }
     .cartecompétence {
         display: flex;

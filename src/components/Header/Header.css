@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -9,30 +10,30 @@ header {
     font-family: Roboto;
     color: white;
     position: relative;
-  }
-  
+    margin-bottom: 20px;
+}
 
-  .background {
+.background {
     position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; 
     z-index: 0; /  }
-
-  .headerContent {
+    
+.headerContent {
+    /* box-shadow: 0px 0.5px 10px white; */
     width: 100%;
-    height: 100%;
+    height: 98vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1;
     position: relative;
     justify-content: space-between;
-  }
+}
 
-
-#logo {
+#photoAndMainNav {
     z-index: 2;
     display: flex;
     flex-direction: row;
@@ -41,29 +42,48 @@ header {
     width: 90vw;
     align-items: flex-start;
     text-align: center;
-    
+    height: 50vh;
 
-    nav {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        padding-top: 5vh;
-
-        ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            gap: 40px;
-            margin: 0;
-            list-style: none;
-
-                li{
-                    font-size: 1.3rem;
-                }
-        }
+    figure {
+        margin: 0;
+            
+        img {
+            width: 150px;
+            clip-path:ellipse(50% 40%);
+            }
     }
+    h1 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    nav {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding-top: 5vh;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 40px;
+                margin: 0;
+                list-style: none;
+                
+
+                    li{
+                        font-size: 1.3rem;
+                    }
+            }
+        }
 }
+
+/* #menuPpal {
+    position: fixed;
+    right: 10px;
+    top: 0;
+} */
 
 a {
     text-decoration: none;
@@ -74,8 +94,16 @@ a:hover {
     font-weight: bold;
 }
 
+.typewriter-text {
+    font-family: Roboto;
+    font-size: 3.5rem; 
+    color: white; 
+    width: 70vw;
+    height: 30vh;
+    /* text-align: center; */
+}
 
-#text {
+#menuDesContacts {
     color: #fff;
     z-index: 2;
     display: flex;
@@ -84,37 +112,33 @@ a:hover {
     text-align: center;
     align-items: center;
     width: 80vw;
-    height: 40vh;
-}
-
-.typewriter-text {
-    font-family: Roboto;
-    font-size: 3rem; 
-    color: white; 
-    width: 70vw;
-}
-
-h1 {
+    height: 20vh;
+    padding-bottom: 5vw;
     font-size: 1.5rem;
-    margin: 0;
 }
 
-figure {
-    margin: 0;
-    
-    img {
-        width: 150px;
-        clip-path:ellipse(50% 40%);
-    }
+#menuDesContacts nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        width: 80vw;
+        text-decoration: underline;
+        padding: 0;
 }
+
+
+
 
 @media screen and (max-width:880px){
-    #logo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    header {        
+        min-height: 100vh;
+        #photoAndMainNav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         align-items: center;
-        
+                
         nav ul{
             display: flex;
             flex-direction: column;
@@ -122,14 +146,24 @@ figure {
             text-align: center;
             padding: 0;
             gap: 10px;
+            margin: 0;
         }
+    }
+}    
+.typewriter-text {
+    font-family: Roboto;
+    font-size: 2rem; 
+    color: white; 
+    width: 70vw;
+    height: 20vh;
+    text-align: center;
+}
+#menuDesContacts{
+    justify-content: flex-end;
+    padding: 0;
+    ul {
+        margin: 5vh;
     }
 }
 
-
-.separateur {
-    border: none;            /* Supprime la bordure par défaut */
-    border-top: 2px solid antiquewhite; /* Ajoute un trait plein */
-    margin: 20px 0;        /* Espace autour de la ligne */
 }
-

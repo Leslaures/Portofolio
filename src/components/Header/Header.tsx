@@ -1,6 +1,8 @@
+import { Anchor } from "@mui/icons-material"
 import "./Header.css"
 import ParticlesBackground from "./ParticlesBackground"
 import Typewriter from "./Typewriter"
+import Burger from "../Burger/Burger"
 
 function Header () {
     return (
@@ -17,6 +19,7 @@ function Header () {
                     <img src="src\assets\photo_de_profil.jpg" alt="photo de profil" />
                     <h1>Laure MAFFINI, <br/> développeuse Web</h1>
                 </figure>
+                <Burger />
                 <nav id="menuPpal">
                     <ul>
                         <li><a href="#home">Accueil</a></li>

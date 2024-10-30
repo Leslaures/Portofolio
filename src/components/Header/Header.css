@@ -78,12 +78,11 @@ header {
             }
         }
 }
-
-/* #menuPpal {
-    position: fixed;
-    right: 10px;
-    top: 0;
-} */
+@media screen and (max-width:880px){
+    #photoAndMainNav nav {
+        display: none;
+    }
+}
 
 a {
     text-decoration: none;

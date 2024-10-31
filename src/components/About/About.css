@@ -23,7 +23,7 @@ h2 {
  }
 
 
- @media screen and (max-width:880px){
+ @media screen and (max-width:930px){
     #about {
         min-height: 100vh;
     }

@@ -41,7 +41,7 @@ h3 {
     width: 40vw;
 }
 
-@media screen and (max-width:880px){
+@media screen and (max-width:930px){
     #competences {
         min-height: 100vh;
     }

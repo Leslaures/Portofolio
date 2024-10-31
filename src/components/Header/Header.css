@@ -78,7 +78,7 @@ header {
             }
         }
 }
-@media screen and (max-width:880px){
+@media screen and (max-width:930px){
     #photoAndMainNav nav {
         display: none;
     }
@@ -129,7 +129,7 @@ a:hover {
 
 
 
-@media screen and (max-width:880px){
+@media screen and (max-width:930px){
     header {        
         min-height: 100vh;
         #photoAndMainNav {

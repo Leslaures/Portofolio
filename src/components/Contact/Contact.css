@@ -20,7 +20,7 @@ h2 {
     color: #8a94a7c0;
  }
 
- @media screen and (max-width:880px){
+ @media screen and (max-width:930px){
     #contact {
         min-height: 100vh;
     }

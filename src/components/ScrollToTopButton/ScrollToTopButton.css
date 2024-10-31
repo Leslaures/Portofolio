@@ -28,10 +28,10 @@
       }
     }
 
-  @media (max-width: 880px) {
+  @media (max-width: 930px) {
   
     .scroll-to-top-button {
-      bottom: 1em;
-      right: 1em;
+      /* bottom: 1em;
+      right: 1em; */
     }
   }

@@ -1,6 +1,6 @@
-import { Anchor } from "@mui/icons-material"
+// import { Anchor } from "@mui/icons-material"
 import "./Header.css"
-import ParticlesBackground from "./ParticlesBackground"
+// import ParticlesBackground from "./ParticlesBackground"
 import Typewriter from "./Typewriter"
 import Burger from "../Burger/Burger"
 
@@ -9,9 +9,9 @@ function Header () {
     <>
     <header>
 
-        <div className="background">
+        {/* <div className="background">
         <ParticlesBackground />
-        </div>
+        </div> */}
 
         <div className="headerContent">
             <section id="photoAndMainNav">

@@ -13,7 +13,7 @@ interface CardProjectProps {
 
 function CardProject ({name, imgSrc,description}:CardProjectProps) {
     const [isFlipped, setisFlipped] = useState(false);
-console.log(imgSrc);
+
     const toggleFlip = () => {
         if (isFlipped) {
             setisFlipped(false);

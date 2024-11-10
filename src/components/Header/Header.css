@@ -10,7 +10,6 @@ header {
     font-family: Roboto;
     color: white;
     position: relative;
-    margin-bottom: 20px;
 }
     
 .headerContent {
@@ -102,7 +101,7 @@ a:hover {
     align-items: center;
     width: 100%;
     height: 20vh;
-    padding-bottom: 5vh;
+    padding-bottom: 5vw;
     font-size: 1.5rem;
 }
 #menuDesContacts nav {
@@ -148,7 +147,7 @@ a:hover {
     text-align: center;
 }
 #menuDesContacts{
-    margin-top: 40%;
+    margin-top: 30%;
 }
 
 }

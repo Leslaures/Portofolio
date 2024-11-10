@@ -5,8 +5,8 @@ import "./ScrollToTopButton.css"
 
 const ScrollToTopButton = () => {
 
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState<number>(0);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
   
   const handleScroll = () => {
     const { scrollY } = window;
@@ -41,18 +41,17 @@ const scrollToTop = () => {
 
 return (
 
-    <div className={`scroll-to-top-button ${isVisible ? 'show' : 'hide'}`}>
-
-      <div 
-        onClick={scrollToTop}
-        role="button"
-        tabIndex={0}
-      >
-        <div className="arrow-up" />
-
-      </div>
-
+  <div className={`scroll-to-top-button ${isVisible ? 'show' : 'hide'}`}>
+    <div
+      onClick={scrollToTop}
+      role="button"
+      tabIndex={0}
+      aria-label="Retour en haut"
+      className="button-container"
+    >
+      <div className="arrow-up"></div>
     </div>
+  </div>
   );
 
 };

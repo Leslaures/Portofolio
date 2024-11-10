@@ -5,13 +5,13 @@ const Typewriter: React.FC = () => {
       <TypewriterEffect
           onInit={(Typewriter) => { 
               Typewriter
-                  .typeString('Je suis Laure Maffini')
+                  .typeString('Je suis <span style="color: #79F2D0;">Laure Maffini</span>')
                   .pauseFor(500)
                   .deleteChars(13)
                   .typeString('ex Assistante de Direction')
                   .pauseFor(500)
                   .deleteChars(26)
-                  .typeString('développeuse Web')
+                  .typeString('<span style="color: #79F2D0;">développeuse Web</span>')
                   .pauseFor(500)
                   .deleteAll()
                   .typeString('Et si on travaillait ensemble ?')

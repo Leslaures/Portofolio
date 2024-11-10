@@ -1,4 +1,4 @@
-#contact {
+#portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,6 @@
     min-height: 100vh;
     width: 100%;
     padding: 0px 40px;
-    border: 1px solid red;
 }
 
 h2 {
@@ -24,7 +23,7 @@ h2 {
  }
 
  @media screen and (max-width:930px){
-    #contact {
+    #portfolio {
         min-height: 100vh;
     }
  }

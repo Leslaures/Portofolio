@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState} from "react";
 import "./CardAbout.css";
 
-interface CardProps {
+interface CardAboutProps {
   icon: string;
   title: string;
   description: string;
 }
 
-function CardAbout({icon, title, description}:CardProps){
+function CardAbout({icon, title, description}:CardAboutProps){
     const [isFlipped, setisFlipped] = useState(false);
 
     const toggleFlip = () => {

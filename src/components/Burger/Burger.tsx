@@ -11,7 +11,7 @@ import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import "./Burger.css"
-import burgerLinks from"../../datas/datas"
+import burgerLinks from"./datas"
 
 interface burgerLinksProps {
     text: string;
@@ -32,10 +32,7 @@ function Burger() {
       <List>
         {burgerLinks.map((burgerLink: burgerLinksProps, index) => (
           <ListItem key={burgerLink.text} disablePadding disableGutters>
-            <ListItemButton component="a" href={burgerLink.href} sx={{ paddingLeft: 0 }}>
-              <ListItemIcon>
-                {/* <{burgerLink.icon} /> */}
-              </ListItemIcon>
+            <ListItemButton component="a" href={burgerLink.href} sx={{ paddingRight: 0 }}>
               <ListItemText 
               primaryTypographyProps={{ fontSize: '2rem' }}
               id='textDrawer' 

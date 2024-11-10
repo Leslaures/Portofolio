@@ -1,19 +1,35 @@
 import "./Portfolio.css"
+import CardProject from "./CardProject";
 
 const projectsList = [
     {
         name: "Dominos Clicker",
-        imgSrc: "",
-        
+        imgSrc: "./src/assets/Dominos-Clicker.png",
+        description: "",
+        stacksfront: "",
+        stackback: "",
+        lien: "",
+        repo: "",        
     }
 ]
 function Portfolio () {
     return (
         <div id="portfolio">
-        <h2>Mon Portfolio</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum, commodi dignissimos maxime reprehenderit, harum itaque quasi non esse obcaecati dolorum, ipsum cupiditate necessitatibus? Incidunt exercitationem deleniti nesciunt itaque laboriosam.
-        </p>
+            <h2>Mon Portfolio</h2>
+            <div className="portfolio-grid">
+                {projectsList.map((project, index) => (
+                <CardProject
+                    key={index}
+                    name={project.name}
+                    imgSrc={project.imgSrc}
+                    description={project.description}
+                    stacksfront={project.stacksfront}
+                    stackback={project.stackback}
+                    lien={project.lien}
+                    repo={project.repo}
+                />
+                ))}
+            </div>
         </div>
     )
 }

@@ -38,9 +38,6 @@ function About () {
                     <p>
                         Développeuse web passionnée par la technique et l'optimisation, j’ai effectué une transition vers le développement web après 14 ans en tant que technicienne groupe dans le tourisme puis en tant qu'assistante de direction. Mon parcours professionnel a toujours eu un même fil rouge : la satisfaction client. Je conçois aujourd'hui des solutions guidées par le souci d’une expérience utilisateur optimale.
                     </p>             
-                    <p>
-                        Si vous cherchez une développeuse polyvalente, technique et attentive aux détails, n'hésitez pas à me contacter pour en discuter !
-                    </p>
                 </section>
                 <section id="sectionvaleurs">
                     <h3>Mes valeurs et points forts</h3>

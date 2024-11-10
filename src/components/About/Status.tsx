@@ -39,6 +39,9 @@ const Status = () => {
         <section id='status'>
             <div className='status-content'>
                 <h3>En recherche d'opportunités</h3>
+                <p>
+                    Si vous cherchez une développeuse polyvalente, technique et attentive aux détails, n'hésitez pas à me contacter pour en discuter !
+                </p>
             </div>
         </section>
     );

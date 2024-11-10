@@ -1,4 +1,4 @@
-#contact {
+#portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,7 @@ h2 {
  }
 
  @media screen and (max-width:930px){
-    #contact {
+    #portfolio {
         min-height: 100vh;
     }
  }

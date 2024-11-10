@@ -13,13 +13,10 @@ header {
     margin-bottom: 20px;
 }
 
-.background {
+#background {
     position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; 
-    z-index: 0; /  }
+    z-index: 0;
+}
     
 .headerContent {
     /* box-shadow: 0px 0.5px 10px white; */
@@ -91,15 +88,17 @@ a {
 
 a:hover {
     font-weight: bold;
+    display: inline-block;
+    transform: scale(1.2);
+    color: #79F2D0;
 }
 
 .typewriter-text {
     font-family: Roboto;
     font-size: 3.5rem; 
     color: white; 
-    width: 70vw;
+    width: 65vw;
     height: 30vh;
-    /* text-align: center; */
 }
 
 #menuDesContacts {
@@ -112,7 +111,7 @@ a:hover {
     align-items: center;
     width: 80vw;
     height: 20vh;
-    padding-bottom: 5vw;
+    padding-bottom: 5vh;
     font-size: 1.5rem;
 }
 

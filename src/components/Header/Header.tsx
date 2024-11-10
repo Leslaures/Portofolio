@@ -9,7 +9,7 @@ function Header () {
     <>
     <header>
 
-        <div className="background">
+        <div id="background">
         <ParticlesBackground />
         </div>
 
@@ -17,7 +17,7 @@ function Header () {
             <section id="photoAndMainNav">
                 <figure>
                     <img src="src\assets\photo_de_profil.jpg" alt="photo de profil" />
-                    <h1>Laure MAFFINI, <br/> développeuse Web</h1>
+                    <h1>Laure MAFFINI, <br/> développeuse fullstack</h1>
                 </figure>
                 <Burger />
                 <nav id="menuPpal">
@@ -25,7 +25,7 @@ function Header () {
                         <li><a href="#home">Accueil</a></li>
                         <li><a href="#about">A propos</a></li>
                         <li><a href="#competences">Compétences</a></li>
-                        <li><a href="#portofolio">Portfolio</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>

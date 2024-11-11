@@ -4,9 +4,9 @@ import CardProject from "./CardProject";
 const projectsList = [
     {
         name: "Dominos Clicker",
-        imgSrc: "./src/assets/Dominos-Clicker.png",
+        imgSrc: "./src/assets/Dominos_Clicker.png",
         description: "",
-        stacksfront: "",
+        stackfront: "",
         stackback: "",
         lien: "",
         repo: "",        
@@ -23,7 +23,7 @@ function Portfolio () {
                     name={project.name}
                     imgSrc={project.imgSrc}
                     description={project.description}
-                    stacksfront={project.stacksfront}
+                    stackfront={project.stacksfront}
                     stackback={project.stackback}
                     lien={project.lien}
                     repo={project.repo}

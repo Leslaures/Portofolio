@@ -46,20 +46,8 @@ h3 {
     text-align: center;
 }
 
-#status {
-    /* padding-top: 3vh; */
-    /* height: 20%; */
-}
-
  @media screen and (max-width:930px){
     #about {
         /* min-height: 100vh;     */
      }
-     #status {
-        /* padding-top: 4vh; */
-     }
-    p {
-        text-align: center;
-    }
-
  }

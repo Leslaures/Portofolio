@@ -5,13 +5,13 @@ interface CardProjectProps {
     name: string;
     imgSrc: string;
     description: string;
-    stacksfront: string;
+    stackfront: string;
     stackback: string;
     lien: string;
     repo: string;
   }
 
-function CardProject ({name, imgSrc,description}:CardProjectProps) {
+function CardProject ({name, imgSrc,description, stackfront, stackback, lien, repo}:CardProjectProps) {
     const [isFlipped, setisFlipped] = useState(false);
 
     const toggleFlip = () => {
@@ -40,6 +40,16 @@ function CardProject ({name, imgSrc,description}:CardProjectProps) {
             </div>
             <div className="card-project-back">
                 <span className="description">{description}</span>
+                <div className="sections">
+                    <section className="stacks">
+                        <span className="stacksfront"><p>Stack Front</p>{stackfront}</span>
+                        <span className="stackback"><p>Stack Back</p>{stackback}</span>
+                    </section>
+                    <section className="liens">
+                        <button className="lien">Voir le site{lien}</button>
+                        <button className="repo"><p>GitHub</p>{repo}</button>
+                    </section>
+                </div>
             </div>
         </div>
     );

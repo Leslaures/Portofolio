@@ -3,7 +3,7 @@ import "./Competences.css"
 function Competences () {
     return (
         <div id="competences">
-            <h2>Mes Compétences</h2>
+            <h2>Mes Compétences techniques</h2>
             <div className="cartecompétence">
                 
                 <section>

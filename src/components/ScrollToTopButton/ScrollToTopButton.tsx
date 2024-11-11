@@ -49,7 +49,7 @@ return (
       aria-label="Retour en haut"
       className="button-container"
     >
-      <div className="arrow-up"></div>
+      <img src="src/assets/arrow-up.webp" alt="Flèche vers le haut" className="arrow-up" />
     </div>
   </div>
   );

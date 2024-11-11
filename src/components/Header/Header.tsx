@@ -3,6 +3,8 @@ import "./Header.css"
 import ParticlesBackground from "./ParticlesBackground"
 import Typewriter from "./Typewriter"
 import Burger from "../Burger/Burger"
+import Rightcontactmenu from "./Rightcontactmenu"
+
 
 function Header () {
     return (
@@ -12,7 +14,9 @@ function Header () {
         <div id="background">
         <ParticlesBackground />
         </div>
-
+        <div>
+            <Rightcontactmenu />
+        </div>
         <div className="headerContent">
             <section id="photoAndMainNav">
                 <figure>
@@ -25,7 +29,7 @@ function Header () {
                         <li><a href="#home">Accueil</a></li>
                         <li><a href="#about">A propos</a></li>
                         <li><a href="#competences">Compétences</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#portfolio">Projets</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -36,13 +40,14 @@ function Header () {
             </div>
 
             <section id="menuDesContacts">
-                 <nav id="contactezmoi">
+                <nav id="contactezmoi">
                     <ul>
                         <li><a href="mailto: lauremaffini@gmail.com">Email</a></li>
                         <li><a href="https://github.com/Leslaures" target="_blank">Github</a></li>
                         <li><a href="https://www.linkedin.com/in/laure-maffini-9368b4139/" target="_blank">Linkedin</a></li>
                     </ul>
                 </nav>
+
             </section>
 
         </div>

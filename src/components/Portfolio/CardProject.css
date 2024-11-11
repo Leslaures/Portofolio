@@ -28,6 +28,21 @@
     color: black;
     transform: rotateY(180deg);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+        p {
+            color: black;
+        }
+}
+.sections {
+    display: flex;
+    
+}
+.stacks {
+
+}
+.liens {
+    display: flex;
 }
 
 h4 {

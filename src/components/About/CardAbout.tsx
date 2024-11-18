@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import { useState} from "react";
 import "./CardAbout.css";
 
 interface CardAboutProps {
@@ -21,7 +21,7 @@ function CardAbout({icon, title, description}:CardAboutProps){
       return (
         <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={toggleFlip}>
         <div className="card-front">
-            <img src={icon} />
+            <img src={icon} alt="dessin associée à l'idée" />
             <h4>{title}</h4>
             <p className="plus-sign">+</p>
         </div>

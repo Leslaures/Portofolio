@@ -1,3 +1,4 @@
+/* /////////////Position à droite/////////////*/
 .scroll-menu {
     position: fixed;
     top: 15%;
@@ -10,26 +11,46 @@
     transition: opacity 0.3s ease-in-out;
     z-index: 10000;
   }
-  
+
   .scroll-menu.visible {
     opacity: 1;
   }
   
   .scroll-menu a img {
-    width: 3rem; /* Ajustez la taille des icônes */
+    width: 3rem;
     height: auto;
     transition: transform 0.3s;
   }
   
   .scroll-menu a img:hover {
-    transform: scale(1.2); /* Effet zoom au survol */
+    transform: scale(1.2);
   }
 
   @media screen and (max-width:930px){
-    .scroll-menu {
-        top: 50%;
+      /* /////////////Position en bas///////////// */
+  .scroll-menu {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 4rem;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 10%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10000;
+    background-color: black;
+    margin-top: 82vh;
+    padding: 0;
+  }
     .scroll-menu a img {
-        width: 2rem; /* Ajustez la taille des icônes */
+        width: 2rem;
         height: auto;
         transition: transform 0.3s;
       }

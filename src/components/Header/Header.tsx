@@ -1,4 +1,3 @@
-import { Anchor } from "@mui/icons-material"
 import "./Header.css"
 import ParticlesBackground from "./ParticlesBackground"
 import Typewriter from "./Typewriter"
@@ -9,7 +8,7 @@ import Rightcontactmenu from "./Rightcontactmenu"
 function Header () {
     return (
     <>
-    <header>
+    <header id="home">
 
         <div id="background">
         <ParticlesBackground />
@@ -20,7 +19,7 @@ function Header () {
         <div className="headerContent">
             <section id="photoAndMainNav">
                 <figure>
-                    <img src="src\assets\photo_de_profil.jpg" alt="photo de profil" />
+                    <img src="src\assets\photo_de_profil.jpg" alt="Profil de Laure Maffini" />
                     <h1>Laure MAFFINI, <br/> développeuse fullstack</h1>
                 </figure>
                 <Burger />
@@ -43,8 +42,8 @@ function Header () {
                 <nav id="contactezmoi">
                     <ul>
                         <li><a href="mailto: lauremaffini@gmail.com">Email</a></li>
-                        <li><a href="https://github.com/Leslaures" target="_blank">Github</a></li>
-                        <li><a href="https://www.linkedin.com/in/laure-maffini-9368b4139/" target="_blank">Linkedin</a></li>
+                        <li><a href="https://github.com/Leslaures" target="_blank" rel="noreferrer">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/laure-maffini-9368b4139/" target="_blank" rel="noreferrer">Linkedin</a></li>
                     </ul>
                 </nav>
 
@@ -54,7 +53,6 @@ function Header () {
     </header>
     </>
 )}
-
 
 export default Header
 

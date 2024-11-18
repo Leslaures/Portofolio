@@ -1,6 +1,7 @@
-import { useCallback, useEffect, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { useEffect, useState } from "react";
+import Particles, { initParticlesEngine, Container } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+// import { Container } from "react-dom";
 
 const ParticlesBackground = () => {
     const [init, setInit] = useState(false);
@@ -13,8 +14,9 @@ const ParticlesBackground = () => {
         });
     }, []);
 
-    const particlesLoaded = (container) => {
+    const particlesLoaded = (container: Container): Promise<void> => {
         console.log(container);
+        return Promise.resolve();
     };
 
     return (
@@ -40,7 +42,11 @@ const ParticlesBackground = () => {
                                     enable: true,
                                     mode: "repulse",
                                 },
-                                resize: true,
+                                resize: {
+                                    enable: true, // Assurez-vous que resize est un objet avec une propriété enable
+                                    density_auto: true,
+                                    density_area: 800,
+                                },
                             },
                             modes: {
                                 push: {

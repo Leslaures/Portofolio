@@ -10,7 +10,7 @@
     }
 }
 .status-content {
-    height: 250px;
+    height: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,9 +24,14 @@
 @media screen and (max-width:768px){
     #status {
         background-color: #79F2D0;
-        width: 150%;
+        width:115vw;
+        height: auto;
     }
-        h3, p {
+    .status-content {
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+    h3, p {
         color: black;
         width: 100%;
     }

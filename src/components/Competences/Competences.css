@@ -14,134 +14,93 @@ p {
 	z-index: 2;
 	position: relative;
 	color: white;
-	font-family: Roboto, sans-serif;
+	font-family: Roboto;
 	background-color: rgba(0, 0, 0, 0.8);
 	min-height: 100vh;
 	width: 100%;
 	padding: 0 40px;
+}
+.cartecompétence {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	gap: 20px;
+	h3 {
+		font-size: 2rem;
+	}
+	section {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		text-align: center;
+	}
+}
+.frontbackend {
+	border: 1px solid white;
+	border-radius: 15px;
+	background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	gap: 2rem;
+	padding: 2rem;
+	height: 80%;
+	figure {
+		margin: 20px;
+	}
+	.logo {
+		background: radial-gradient(#94816b50, #161919);
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		height: 8rem;
+		width: 8rem;
+		border-radius: 50%;
+		filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+		img {
+			width: 5rem;
+		}
+	}
 }
 
 @media screen and (max-width: 1030px) {
 	h2 {
 		text-align: center;
 	}
-}
-
-.competence-system {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
-	gap: 20px;
-	flex-wrap: wrap;
-}
-
-/* Atome principal */
-.atom {
-	position: relative;
-	width: 30rem;
-	height: 30rem;
-	border-radius: 50%;
-	background: radial-gradient(circle, #222, #000);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: visible;
-}
-.atom-center {
-	position: absolute;
-	width: 9rem;
-	height: 9rem;
-	background: #79f2d0;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: black;
-	font-size: 1.2rem;
-	text-align: center;
-	z-index: 2;
-}
-
-/* Orbites */
-.orbit {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.skill {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: white;
-	transform: translate(-50%, -50%);
-	background: rgb(71, 70, 70);
-	height: 8rem;
-	width: 8rem;
-	border-radius: 50%;
-	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-	z-index: 3;
-}
-.skill img {
-	width: 4rem;
-	margin-bottom: 0.5rem;
-}
-.skill figcaption {
-	font-size: 0.8rem;
-}
-
-/* Lignes connectant l'atome central */
-.lines {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-}
-
-.lines line {
-	stroke: #79f2d0;
-	stroke-width: 2;
-	stroke-opacity: 0.7;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-	.atom {
-		width: 200px;
-		height: 200px;
-	}
-
-	.atom-center {
-		width: 90px;
-		height: 90px;
-		font-size: 1rem;
-	}
-
-	.skill {
-		width: 80px;
-		height: 80px;
-	}
-
-	.skill img {
-		width: 30px;
-		height: 30px;
-	}
-	.competence-system {
+	.cartecompétence {
 		display: flex;
-		justify-content: space-around;
-		align-items: center;
+		flex-direction: column;
 		width: 100%;
-		gap: 70px;
-		flex-wrap: wrap;
-		min-height: 80vh;
+		section {
+			width: 100%;
+		}
+	}
+	.frontbackend {
+		padding: 20px 10px;
+		gap: 20px;
+		justify-content: space-evenly;
+		figure {
+			margin: 5px;
+		}
+		.logo {
+			background: radial-gradient(#94816b50, #161919);
+			display: flex;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			height: 4rem;
+			width: 4rem;
+			border-radius: 50%;
+			filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+			img {
+				width: 2.5rem;
+			}
+		}
 	}
 }
